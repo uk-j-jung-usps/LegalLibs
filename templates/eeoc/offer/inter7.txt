@@ -1,0 +1,3 @@
+\par\ltrpar\s25\ql \fi-360\li1080\ri0\sl480\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin1080\itap0\pararsid7615613\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f1\fs22\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\fs24\insrsid12661453 The Agency will provide training to [employees named in the above-referenced complaint as responding management officials whose actions warrant training] on the topic of [any appropriate topic at issue in the complaint];}

@@ -1,0 +1,11 @@
+\pard \ltrpar\ql \fi-720\li720\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid14447799 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14447799 cc:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid9730648 \tab }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid14447799\charrsid16726037 %COMP_FN%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14447799  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14447799\charrsid16726037 %COMP_LN%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14447799 \tab \tab }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i\insrsid14447799\charrsid2183503 Via }{\field\flddirty\fldpriv{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid14447799  FORMDROPDOWN }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid14447799 {\*\datafield 
+668000000000000000000000000000000000000000008c000600060000000a000c001d0027003400530059001046697273742d436c617373204d61696c0946616373696d696c650c45787072657373204d61696c1e4365727469666965642c2052657475726e2d52656365697074204d61696c05456d61696c325072696f72
+697479204d61696c20772f5553505320547261636b696e6720235f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f}{\*\formfield{\fftype2\ffres25\fftypetxt0\ffhaslistbox\ffdefres0{\*\ffl First-Class Mail}{\*\ffl Facsimile}{\*\ffl Express Mail}{\*\ffl 
+Certified, Return-Receipt Mail}{\*\ffl Email}{\*\ffl Priority Mail w/USPS Tracking #___________________}}}}}{\fldrslt }}\sectd \ltrsect\psz1\pgnrestart\linex0\headery432\footery432\endnhere\titlepg\sectdefaultcl\sectrsid6384285\sftnbj {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid14447799 
+\par \tab %COMP_ADD%
+\par \tab %COMP_CITYSTZIP%
+\par }\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid14447799 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8023073 
+\par }

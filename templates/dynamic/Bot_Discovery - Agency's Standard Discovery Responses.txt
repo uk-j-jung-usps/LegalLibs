@@ -1,0 +1,83 @@
+\line
+{\pard\cf1\ As to objections only: \tab\tab
+_____________________________
+\line\tab\tab\tab\tab\tab\%ATTORNEY%
+\line\tab\tab\tab\tab\tab\%ATTORNEY_TITLE%
+\line\tab\tab\tab\tab\tab\United States Postal Service Law Department
+\line\tab\tab\tab\tab\tab\%LO_AREAOFF% – %LO_OFFICE%
+\line\tab\tab\tab\tab\tab\%LO_ADD_1%
+\line\tab\tab\tab\tab\tab\%LO_ADD_2%
+\line\tab\tab\tab\tab\tab\Telephone: %LO_TEL%
+\line\tab\tab\tab\tab\tab\Fax: %LO_FAX%
+\par}
+
+\page
+{\pard\cf1\b\qc AS TO INTERROGATORY NOS. ___ TO ___\b\par}
+
+{\pard\cf1\sl480
+\tab I
+, __________________, have read the responses to the above-referenced interrogatory numbers.  I hereby certify that those responses are true and correct to the best of my knowledge and belief.
+\par}
+
+\line\line
+{\pard\cf1\ DATED: {\field\flddirty{\*\fldinst {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \f1\fs22\insrsid8152461  DATE \\@ "MM/d/yyyy" }}{\fldrslt {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 
+\f1\fs22\lang1024\langfe1024\noproof\insrsid8152461 February 7, 2014}}}
+\tab\tab\tab\tab
+_____________________________
+\par}
+
+{\pard\cf1
+\tab\tab\tab\tab\tab\tab
+[PRINT NAME]
+\par}
+
+{\pard\cf1
+\tab\tab\tab\tab\tab\tab
+[JOB TITLE]
+\par}
+
+\page
+{\pard\cf1\b\qc CERTIFICATE OF SERVICE\b\par}
+
+\line\line
+
+{\pard\cf1
+This is to certify that a true and correct copy of the foregoing AGENCY\'92S RESPONSES TO COMPLAINANT\'92S WRITTEN DISCOVERY was mailed by the undersigned postage prepaid by Priority Mail with USPS Tracking # ________________________, except as otherwise noted, to the following:
+\par}
+
+\line
+{\pard\cf1\ul COMPLAINANT\ul0\par}
+
+\line
+{\pard\cf1 %COMP_FN% %COMP_LN%\par}
+{\pard\cf1 %COMP_ADD%\par}
+{\pard\cf1 %COMP_CITYSTZIP%\par}
+
+\line
+{\pard\cf1\ul COMPLAINANT\'92S REPRESENTATIVE\ul0\par}
+
+\line
+{\pard\cf1 %COMP_REP_FN% %COMP_REP_LN%\par}
+{\pard\cf1 %COMP_REP_COMPANY%\par}
+{\pard\cf1 %COMP_REP_ADD%\par}
+{\pard\cf1 %REP_CITYSTZIP%\par}
+
+\line
+{\pard\cf1 
+DATE: {\field\flddirty{\*\fldinst {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \f1\fs22\insrsid8152461  DATE \\@ "MMMM d, yyyy" }}{\fldrslt {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 
+\f1\fs22\lang1024\langfe1024\noproof\insrsid8152461 February 7, 2014}}}
+\tab\tab
+____________________________
+\par}
+
+\pard\nowidctlpar\cf0\lang9\f1\fs22\tab\tab\tab\tab\tab\cf1\lang1033\f0\fs24 %ADMIN_ASSIST%\par
+\tab\tab\tab\tab\tab Administative Assistant\par
+\tab\tab\tab\tab\tab United States Postal Service Law Department\par
+\tab\tab\tab\tab\tab %LO_AREAOFF% - %LO_OFFICE%\par
+\tab\tab\tab\tab\tab %LO_ADD_1%\par
+\tab\tab\tab\tab\tab %LO_ADD_2%\par
+\tab\tab\tab\tab\tab Telephone: %LO_TEL%\par
+\tab\tab\tab\tab\tab Fax: %LO_FAX%\par
+\pard\sa200\sl276\slmult1\cf0\lang9\f1\fs22\tab\tab\tab\tab\tab\par
+
+}

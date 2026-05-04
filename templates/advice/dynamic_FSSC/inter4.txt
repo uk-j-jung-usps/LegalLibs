@@ -1,0 +1,11 @@
+
+\pard \ltrpar\ql \li0\ri0\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid1454502 {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \fs22\insrsid1454502\charrsid1454502 
+\par {\listtext\pard\plain\ltrpar \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \f1\fs22\insrsid1454502\charrsid1454502 \hich\af1\dbch\af0\loch\f1 1.\tab}}\pard \ltrpar\ql \fi-360\li720\ri0\sl276\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls3\adjustright\rin0\lin720\itap0\pararsid1454502\contextualspace {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \fs22\insrsid1454502\charrsid1454502 identifies each requested record and/or
+ states the nature of the requested testimony; 
+\par {\listtext\pard\plain\ltrpar \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \f1\fs22\insrsid1454502\charrsid1454502 \hich\af1\dbch\af0\loch\f1 2.\tab}fully describes the relevance of each record or the proposed testimony to the proceeding;
+\par {\listtext\pard\plain\ltrpar \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \f1\fs22\insrsid1454502\charrsid1454502 \hich\af1\dbch\af0\loch\f1 3.\tab}provides an explanation as to why the information sought is unavailable by any other means; }{\rtlch\fcs1 \af1\afs22 
+\ltrch\fcs0 \fs22\ul\insrsid1454502\charrsid1454502 and}{\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \fs22\insrsid1454502\charrsid1454502 
+\par {\listtext\pard\plain\ltrpar \rtlch\fcs1 \af0\afs22 \ltrch\fcs0 \f1\fs22\insrsid1454502\charrsid1454502 \hich\af1\dbch\af0\loch\f1 4.\tab}makes a showing as to why no document could be provided and used in lieu of the testimony requested. 
+\par }\pard \ltrpar\ql \li0\ri0\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid1454502 {\rtlch\fcs1 \af1\afs22 \ltrch\fcs0 \fs22\insrsid1454502\charrsid1454502 
+\par }

@@ -1,0 +1,24 @@
+\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid11936962 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid293638 cc:\tab }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 
+%AJ_FN%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 %AJ_LN%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11936962 \tab \tab }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i\insrsid11936962\charrsid2183503 Via }{\field\fldpriv{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid7671543  FORMDROPDOWN }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid7671543 {\*\datafield 
+668000000000000000000000000000000000000000008c000600060000000a000c001d0027003400530059001046697273742d436c617373204d61696c0946616373696d696c650c45787072657373204d61696c1e4365727469666965642c2052657475726e2d52656365697074204d61696c05454d61696c325072696f72
+697479204d61696c20772f5553505320547261636b696e6720235f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f}{\*\formfield{\fftype2\ffres25\fftypetxt0\ffhaslistbox\ffdefres0{\*\ffl First-Class Mail}{\*\ffl Facsimile}{\*\ffl Express Mail}{\*\ffl 
+Certified, Return-Receipt Mail}{\*\ffl EMail}{\*\ffl Priority Mail w/USPS Tracking #___________________}}}}}{\fldrslt }}\sectd \ltrsect\psz1\pgnrestart\linex0\headery432\footery432\endnhere\titlepg\sectdefaultcl\sectrsid12976142\sftnbj {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid13444631 
+\par }\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15080854 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid13444631 \tab }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 %AJ_TITLE%}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854 
+\par }\pard \ltrpar\ql \li720\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid10581445 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10581445 Merit Systems Protection Board
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854 %MSPB_OFFICE%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10581445 
+\par }\pard \ltrpar\ql \fi720\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15080854 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 {\*\bkmkstart AJS_CITYSTZIP_1}%AJ_ADDRESS%}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid15080854 
+\par }\pard \ltrpar\ql \li720\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid10581445 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10581445 Merit Systems Protection Board
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854 %MSPB_OFFICE%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10581445 
+\par }\pard \ltrpar\ql \fi720\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15080854 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 {\*\bkmkstart AJS_CITYSTZIP_1}%AJ_ADDRESS%}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid15080854 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854\charrsid10827976 {\*\bkmkend AJS_CITYSTZIP_1}%AJS_CITYSTZIP%}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15080854 
+\par }\pard \ltrpar\ql \li720\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid10581445 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12606789 
+\par }\pard \ltrpar\ql \fi-720\li720\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid8666512 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12606789 \tab 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14252626 
+\par }\pard \ltrpar\ql \fi720\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6258421 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6258421 
+\par }\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid8666512 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8666512 
+\par }

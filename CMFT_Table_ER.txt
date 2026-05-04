@@ -1,0 +1,62 @@
+CFMT_BASE
+Table used to identify when a matter should be processed.
+
+  base_key       NUMBER
+  matter_key     NUMBER							links to matter_key in the MATTER table
+  process        CHAR(1)						flag should be set to Y when templates are to be processed  
+  date_added     DATE
+  added_by       NUMBER
+  date_processed DATE
+  processed_by   NUMBER
+
+CFMT_SELECTED_TEMPLATES
+Table that list all the templates that the user has selected to process.  There will be one row of date for each template that the user chooses.
+
+  selected_key   NUMBER
+  base_key       NUMBER							links to base_key in the CFMT_BASE table
+  template_key   NUMBER							links to template_key in the CFMT_TEMPLATES table
+  date_added     DATE
+  added_by       NUMBER
+  date_processed DATE
+  processed_by   NUMBER
+
+CFMT_MATTERKEY_PAIRS
+Table used to collect the key/values for each template by MatterKey.
+
+  matterkey_pairs_key NUMBER
+  matter_key          NUMBER					links to matter_key in the MATTER table					
+  tempvar_key_name    VARCHAR2(100)				name of key added for convenience.  should be deleted
+  tempvar_value       VARCHAR2(100)
+  date_added          DATE,
+  tempvar_key         NUMBER,					links to tempvar_key in the CFMT_TEMPVARS table
+  added_by            NUMBER
+
+ 
+CFMT_TEMPLATES 
+Table that list all templates and the folder they are contained.  If the template is used by all offices the lmgroup_key is null otherwise the lmgroup_key contains the office where the template is used.  In a case like in Pacific area office the lmgroup_key is the key of the primary office which would be San Francisco in the Pacific area.  However this is not a requirement.  The only requirement is that the lmgroup_key be a member of the office area.
+
+  template_key    NUMBER not null
+  template_name   VARCHAR2(100) not null		full name of template including rtf extension
+  template_folder VARCHAR2(100)					location of template
+  lmgroup_key     NUMBER						links to lmgroup_key in the LMGROUP table
+
+  
+CFMT_TEMPLATE_VARS
+Table that list all templates and their associated variables
+
+  template_vars_key NUMBER
+  template_key      NUMBER						links to template_key in the CFMT_TEMPLATES table
+  tempvar_key       NUMBER						links to tempvar_key in the CFMT_TEMPVARS table
+  tempvar_key_name  VARCHAR2(100)				name of key added for convenience.  should be deleted
+  date_added        DATE
+
+  
+CFMT_TEMPVARS
+Tables that list all template variables
+
+  tempvar_key   NUMBER
+  tempvar_name  VARCHAR2(100)
+  default_value VARCHAR2(100)					default vale of key.  Example PMG is current Postmaster General
+
+  
+  

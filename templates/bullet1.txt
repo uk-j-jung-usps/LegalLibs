@@ -1,0 +1,5 @@
+{\*\pgdsctbl
+{\pgdsc0\pgdscuse451\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\pgdscnxt0 Default Style;}}
+\formshade\paperh15840\paperw12240\margl1134\margr1134\margt1134\margb1134\sectd\sbknone\sectunlocked1\pgndec\pgwsxn12240\pghsxn15840\marglsxn1134\margrsxn1134\margtsxn1134\margbsxn1134\ftnbj\ftnstart1\ftnrstcont\ftnnar\aenddoc\aftnrstcont\aftnstart1\aftnnrlc
+\pgndec\pard\plain \s17\sl288\slmult1\sb0\sa140{\listtext\pard\plain \dbch\af6\dbch\af6\loch\f6 \u8226\'95\tab}\ilvl0\ls2 \li720\ri0\lin720\rin0\fi-360\sb0\sa140{\rtlch \ltrch\loch\loch\f5
+Test3}

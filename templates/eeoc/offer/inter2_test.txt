@@ -1,0 +1,5 @@
+\line \bullet \tab Hello
+\line \bullet \tab World
+\line \tab \bullet Nested (but with square as bullet please)
+\line \tab \u9632 Also nested (also square bullet)
+\line \tab and regular again

@@ -1,0 +1,6 @@
+ilvl0\ls2 \li720\ri0\lin720\rin0\fi-360{\rtlch \ltrch\loch\loch\f5
+Test1}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140{\listtext\pard\plain \dbch\af6\dbch\af6\loch\f6 \u8226\'95\tab}\ilvl0\ls2 \li720\ri0\lin720\rin0\fi-360{\rtlch \ltrch\loch\loch\f5
+Test2}
+\par \pard\plain \s17\sl288\slmult1\sb0\sa140{\listtext\pard\plain \dbch\af6\dbch\af6\loch\f6 \u8226\'95\tab}\ilvl0\ls2 \li720\ri0\lin720\rin0\fi-360\sb0\sa140{\rtlch \ltrch\loch\loch\f5
+Test3}

@@ -1,0 +1,7 @@
+\pard\plain \ltrpar\s25\ql \fi-360\li1080\ri0\sl480\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin1080\itap0\pararsid7615613\contextualspace \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f1\fs22\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\fs24\insrsid12661453 A}{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid7615613\charrsid7615613  lump sum payment}{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid1456550  }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid7615613\charrsid7615613 
+in the amount of }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \b\fs24\highlight7\insrsid16539111\charrsid16539111 $%DOLLAR_AMT%}{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \b\fs24\highlight7\insrsid16539111 }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\b\fs24\highlight7\insrsid16539111\charrsid16539111 }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \b\fs24\insrsid1456550  }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid1456550 to Complainant and }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\fs24\highlight7\insrsid16539111\charrsid16539111 %HIS_HER_THEIR%}{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\highlight7\insrsid1456550\charrsid16539111 }{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid1456550  attorney}{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\fs24\insrsid7615613\charrsid12661453 ; }

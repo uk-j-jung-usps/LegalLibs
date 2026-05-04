@@ -1,0 +1,6 @@
+{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 
+\fs24\insrsid7615613\charrsid12661453 ; }
+{\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid7615613 
+\par {\listtext\pard\plain\ltrpar \s25 \rtlch\fcs1 \af1 \ltrch\fcs0 \f3\insrsid1585919 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}
+\pard \ltrpar\s25\ql \fi-360\li1080\ri0\sl480\slmult1
+\widctlpar\wrapdefault\aspalpha\aspnum\faauto\ls1\adjustright\rin0\lin1080\itap0\pararsid3017871\contextualspace {\rtlch\fcs1 \af1\afs24 \ltrch\fcs0 \fs24\insrsid1585919 A lump sum payment in the amount of $%DOLLAR_AMT% to Complainant; and reasonable attorney\rquote s fees and costs;}
