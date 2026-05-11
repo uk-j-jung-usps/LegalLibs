@@ -3,7 +3,7 @@ package base;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import base.LoadFile;
+import base.Load_File;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -179,7 +179,7 @@ public class DbConn {
     
     public static ResultSet execSQL(String sql) throws SQLException{
   	  
-  	  if (LoadFile.lTest) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
+  	  if (Load_File.lTest) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
     
   	  Statement s = dbCon.createStatement(); 
   	  ResultSet r = s.executeQuery(sql); 

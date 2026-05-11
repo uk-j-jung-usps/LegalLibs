@@ -50,7 +50,7 @@ public class Merge_73 {
         var matterNumber = args[0];
         var sMatterKey    = args[1];
 
-        if (LoadFile.lTest) {
+        if (Load_File.lTest) {
             LOG.info("Merge_73 — matter: " + matterNumber);
         }
 
@@ -93,7 +93,7 @@ public class Merge_73 {
                 int questKey = rs.getInt("dynamic_quest_key");
                 int answer   = rs.getInt("answer");
 
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("Q%d  answer=%d".formatted(questKey, answer));
                 }
 
@@ -127,7 +127,7 @@ public class Merge_73 {
             case 7 -> { if (answer == 1) fragments.add(dynPath("inter12.txt")); }
             case 8 -> {
                 if (answer == 1) fragments.add(dynPath("inter13.txt"));
-                if (LoadFile.lTest) LOG.info("  Adding bottom fragments");
+                if (Load_File.lTest) LOG.info("  Adding bottom fragments");
                 fragments.add(dynPath("inter14.txt")); // always included
                 fragments.add(dynPath("Bottom_Final_Subpoena_State_Court_template.txt"));
             }
@@ -153,7 +153,7 @@ public class Merge_73 {
                 var path     = fragments.get(i);
                 var fileName = path.getFileName().toString();
 
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
 
