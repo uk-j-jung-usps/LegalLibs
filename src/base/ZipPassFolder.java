@@ -48,7 +48,7 @@ public class ZipPassFolder {
         var outputZipPath = Path.of(args[1]);
         var password      = args[2].toCharArray();  // char[] avoids long-lived String on heap
 
-        if (LoadFile.lTest) {
+        if (Load_File.lTest) {
             LOG.info("NewZipPassFolder — source  : " + sourceFolder);
             LOG.info("NewZipPassFolder — output  : " + outputZipPath);
             LOG.info("NewZipPassFolder — password: " + args[2]);   // only logged in test mode
@@ -85,7 +85,7 @@ public class ZipPassFolder {
         // Delete any pre-existing ZIP to avoid Zip4j's split-archive restriction
         if (Files.exists(outputZipPath)) {
             Files.delete(outputZipPath);
-            if (LoadFile.lTest) {
+            if (Load_File.lTest) {
                 LOG.info("Deleted existing ZIP: " + outputZipPath.getFileName());
             }
         }
@@ -101,7 +101,7 @@ public class ZipPassFolder {
         // ZipFile implements Closeable in Zip4j 2.x — use try-with-resources
         try (var zipFile = new ZipFile(outputZipPath.toFile(), password)) {
             zipFile.addFolder(sourceFolder.toFile(), parameters);
-            if (LoadFile.lTest) {
+            if (Load_File.lTest) {
                 LOG.info("ZIP created successfully: " + outputZipPath);
             }
         }

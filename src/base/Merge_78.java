@@ -52,7 +52,7 @@ public class Merge_78 {
         var matterNumber = args[0];
         var matterKey    = args[1];
 
-        if (LoadFile.lTest) {
+        if (Load_File.lTest) {
             LOG.info("Merge_78 — matter: " + matterNumber);
         }
 
@@ -145,7 +145,7 @@ public class Merge_78 {
                   'COMP_REP_LN','COMP_REP_ADD','COMP_REP_COMPANY')
                 """.formatted(matterKey);
 
-        if (LoadFile.lTest) LOG.info("SQL (rep query): " + repSql);
+        if (Load_File.lTest) LOG.info("SQL (rep query): " + repSql);
 
         var rep = new java.util.HashMap<String, String>();
         try (ResultSet rs = DbConn.execSQL(repSql)) {
@@ -153,7 +153,7 @@ public class Merge_78 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value"); // may be null
                 rep.put(key, val);
-                if (LoadFile.lTest) LOG.info("Rep field %s = %s".formatted(key, val));
+                if (Load_File.lTest) LOG.info("Rep field %s = %s".formatted(key, val));
             }
         }
 
@@ -163,7 +163,7 @@ public class Merge_78 {
                         || ln == null || "PRO SE".equalsIgnoreCase(ln);
 
         if (!nameNull) {
-            if (LoadFile.lTest) LOG.info("Representative exists — adding CC");
+            if (Load_File.lTest) LOG.info("Representative exists — adding CC");
             return new AddressFields(
                     safeGet(rep, "COMP_REP_MR_MS"),
                     fn,
@@ -175,7 +175,7 @@ public class Merge_78 {
         }
 
         // Fall back to complainant fields
-        if (LoadFile.lTest) LOG.info("No representative — using complainant fields");
+        if (Load_File.lTest) LOG.info("No representative — using complainant fields");
 
         var compSql = """
                 SELECT t.tempvar_key_name, t.tempvar_value
@@ -185,7 +185,7 @@ public class Merge_78 {
                          'COMP_MR_MS','COMP_FN','COMP_LN','COMP_ADD','COMP_CITYSTZIP')
                 """.formatted(matterKey);
 
-        if (LoadFile.lTest) LOG.info("SQL (comp query): " + compSql);
+        if (Load_File.lTest) LOG.info("SQL (comp query): " + compSql);
 
         var comp = new java.util.HashMap<String, String>();
         try (ResultSet rs = DbConn.execSQL(compSql)) {
@@ -193,7 +193,7 @@ public class Merge_78 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value");
                 comp.put(key, val);
-                if (LoadFile.lTest) LOG.info("  Comp field %s = %s".formatted(key, val));
+                if (Load_File.lTest) LOG.info("  Comp field %s = %s".formatted(key, val));
             }
         }
 
@@ -223,7 +223,7 @@ public class Merge_78 {
                 """.formatted(matterKey);
         try {
             DbConn.execSQL(sql);
-            if (LoadFile.lTest) LOG.info("Deleted stale dynamic pairs for matter " + matterKey);
+            if (Load_File.lTest) LOG.info("Deleted stale dynamic pairs for matter " + matterKey);
         } catch (SQLException e) {
             LOG.severe("Failed to delete dynamic pairs: " + e.getMessage());
         }
@@ -256,7 +256,7 @@ public class Merge_78 {
 
         for (var row : inserts) {
             var sql = base.formatted(matterKey, row[0], row[1], row[2]);
-            if (LoadFile.lTest) LOG.info("Insert: " + sql);
+            if (Load_File.lTest) LOG.info("Insert: " + sql);
             try {
                 DbConn.execSQL(sql);
             } catch (SQLException e) {
@@ -284,7 +284,7 @@ public class Merge_78 {
         try (var writer = Files.newBufferedWriter(outputPath, StandardCharsets.UTF_8)) {
             for (int i = 0; i < fragments.size(); i++) {
                 var path = fragments.get(i);
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
                 try (BufferedReader reader = Files.newBufferedReader(path.toAbsolutePath(), StandardCharsets.UTF_8)) {

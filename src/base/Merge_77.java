@@ -40,7 +40,7 @@ public class Merge_77 {
         var matterNumber = args[0];
         var cMatterKey = args[1];
 
-        if (LoadFile.lTest) {
+        if (Load_File.lTest) {
             LOG.info("Merge_77 — matter: " + matterNumber);
         }
 
@@ -82,7 +82,7 @@ public class Merge_77 {
                 int questKey = rs.getInt("dynamic_quest_key");
                 int answer   = rs.getInt("answer");
 
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("  Q%d  answer=%d".formatted(questKey, answer));
                 }
 
@@ -121,7 +121,7 @@ public class Merge_77 {
             }
             case 22 -> {
                 if (answer == 1) fragments.add(dynPath("inter12.txt"));
-                if (LoadFile.lTest) LOG.info("  Adding bottom fragment");
+                if (Load_File.lTest) LOG.info("  Adding bottom fragment");
                 fragments.add(dynPath("Bottom_Offer_of_Resolution.rtf")); // always included
             }
             default -> LOG.warning("Unrecognised question key: " + questKey);
@@ -141,7 +141,7 @@ public class Merge_77 {
             for (int i = 0; i < fragments.size(); i++) {
                 var path = fragments.get(i);
 
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
 

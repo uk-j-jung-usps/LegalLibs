@@ -52,7 +52,7 @@ public class Merge_80 {
         var matterNumber = args[0];
         var matterKey    = args[1];
 
-        if (LoadFile.lTest) {
+        if (Load_File.lTest) {
             LOG.info("NewMerge_80 — matter: " + matterNumber);
         }
 
@@ -150,7 +150,7 @@ public class Merge_80 {
                          'REP_LN','REP_ADD','REP_COMPANY')
                 """.formatted(cMatterKey);
 
-        if (LoadFile.lTest) LOG.info("SQL (rep query): " + repSql);
+        if (Load_File.lTest) LOG.info("SQL (rep query): " + repSql);
 
         Map<String, String> rep = new HashMap<>();
         try (ResultSet rs = DbConn.execSQL(repSql)) {
@@ -158,7 +158,7 @@ public class Merge_80 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value"); // may be null
                 rep.put(key, val);
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("  Rep field %s = %s".formatted(key, val));
                 }
             }
@@ -169,7 +169,7 @@ public class Merge_80 {
         boolean nameNull = fn.isEmpty() || ln.isEmpty();
 
         if (!nameNull) {
-            if (LoadFile.lTest) LOG.info("Representative exists — adding CC");
+            if (Load_File.lTest) LOG.info("Representative exists — adding CC");
             return new AddressFields(
                     safeGet(rep, "REP_MR_MS"),
                     fn,
@@ -181,7 +181,7 @@ public class Merge_80 {
         }
 
         // Fall back to appellant fields
-        if (LoadFile.lTest) LOG.info("No representative — using appellant fields");
+        if (Load_File.lTest) LOG.info("No representative — using appellant fields");
 
         var appSql = """
                 SELECT t.tempvar_key_name, t.tempvar_value
@@ -192,7 +192,7 @@ public class Merge_80 {
                          'APPELLANT_ADD','APPELLANT_CITYSTZIP')
                 """.formatted(cMatterKey);
 
-        if (LoadFile.lTest) LOG.info("SQL (appellant query): " + appSql);
+        if (Load_File.lTest) LOG.info("SQL (appellant query): " + appSql);
 
         Map<String, String> app = new HashMap<>();
         try (ResultSet rs = DbConn.execSQL(appSql)) {
@@ -200,7 +200,7 @@ public class Merge_80 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value");
                 app.put(key, val);
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("  Appellant field %s = %s".formatted(key, val));
                 }
             }
@@ -233,7 +233,7 @@ public class Merge_80 {
                 """.formatted(matterKey);
         try {
             DbConn.execSQL(sql);
-            if (LoadFile.lTest) {
+            if (Load_File.lTest) {
                 LOG.info("Deleted stale dynamic pairs for matter " + matterKey);
             }
         } catch (SQLException e) {
@@ -267,7 +267,7 @@ public class Merge_80 {
 
         for (var row : inserts) {
             var sql = baseSql.formatted(matterKey, row[0], row[1], row[2]);
-            if (LoadFile.lTest) LOG.info("Insert: " + sql);
+            if (Load_File.lTest) LOG.info("Insert: " + sql);
             try {
                 DbConn.execSQL(sql);
             } catch (SQLException e) {
@@ -295,7 +295,7 @@ public class Merge_80 {
         try (var writer = Files.newBufferedWriter(outputPath, StandardCharsets.UTF_8)) {
             for (int i = 0; i < fragments.size(); i++) {
                 var path = fragments.get(i);
-                if (LoadFile.lTest) {
+                if (Load_File.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
                 try (BufferedReader reader = Files.newBufferedReader(path.toAbsolutePath(), StandardCharsets.UTF_8)) {
