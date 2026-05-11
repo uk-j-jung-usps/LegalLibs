@@ -222,13 +222,13 @@ public class LoadFile {
                 }
                 case 78 -> {
                     if (RuntimeOption.TEST_MODE.isEnabled()) {
-                        System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
+                        System.out.println("EEOC Template Ltr Applicant Rep Req Auth final");
                     }
                     Merge_78.main(mergeArgs.toArray(String[]::new));
                 }
                 case 80 -> {
                     if (RuntimeOption.TEST_MODE.isEnabled()) {
-                        System.out.println("MSPB Template Ltr Applnt Rep Req Auth final");
+                        System.out.println("MSPB Template Ltr Applicant Rep Req Auth final");
                     }
                     Merge_80.main(mergeArgs.toArray(String[]::new));
                 }
