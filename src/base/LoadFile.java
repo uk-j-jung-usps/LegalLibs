@@ -12,7 +12,6 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 import base.DbConn;
-import ldis.legallibs.queries.CmftSqlQueries;
 
 /**
  * Entry point for the Legal Libs template processing pipeline.

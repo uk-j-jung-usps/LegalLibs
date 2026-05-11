@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import ldis.legallibs.db.DbConn;
+import base.DbConn;
 
 /**
  * Retrieves key/value substitution pairs for a matter from the database

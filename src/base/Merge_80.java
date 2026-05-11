@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import ldis.legallibs.db.DbConn;
+import base.DbConn;
 
 /**
  * Dynamic template merge for template key 80 — MSPB Ltr Applnt Rep Req Auth final.

@@ -3,7 +3,7 @@ package base;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import ldis.legallibs.base.LoadFile;
+import base.LoadFile;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
