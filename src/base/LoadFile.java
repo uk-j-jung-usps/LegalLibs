@@ -67,7 +67,7 @@ public class LoadFile {
             String emailAddress
     ) {}
 
-    private record DynamicTemplateRow(String matterNumber, String matterKey, int templateKey) {}
+    private record DynamicTemplateRow(String matterNumber, String matterKeyText, int templateKey) {}
 
     private record MatterProcessResult(
             boolean runProcess,
@@ -205,7 +205,7 @@ public class LoadFile {
             System.out.println(row.matterNumber());
         }
 
-        List<String> mergeArgs = List.of(row.matterNumber(), row.matterKey());
+        List<String> mergeArgs = List.of(row.matterNumber(), row.matterKeyText());
         try {
             switch (row.templateKey()) {
                 case 73 -> {
@@ -228,7 +228,7 @@ public class LoadFile {
                 }
                 case 80 -> {
                     if (RuntimeOption.TEST_MODE.isEnabled()) {
-                        System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
+                        System.out.println("MSPB Template Ltr Applnt Rep Req Auth final");
                     }
                     Merge_80.main(mergeArgs.toArray(String[]::new));
                 }
@@ -260,7 +260,7 @@ public class LoadFile {
                        lawmanager.cmft_templates c,
                        lawmanager.matter d,
                        lawmanager.personnel e,
-                       lawmanager.lawmanager.eaddress f
+                       lawmanager.eaddress f
                  where a.process = 'Y'
                    and a.base_key = ?
                    and a.matter_key = d.matter_key
@@ -321,7 +321,11 @@ public class LoadFile {
                     processBaseArgs.add(row.matterName());
                     processBaseArgs.add(row.matterKey());
 
-                    ProcessBase.process(processBaseArgs);
+                    try {
+                        ProcessBase.process(processBaseArgs);
+                    } catch (RuntimeException e) {
+                        LOGGER.log(Level.SEVERE, "ProcessBase failed for template " + processedTemplateName, e);
+                    }
                 }
             }
         }
@@ -337,12 +341,16 @@ public class LoadFile {
         try {
             Files.createDirectories(directory);
             try (Stream<Path> paths = Files.list(directory)) {
-                for (Path path : (Iterable<Path>) paths::iterator) {
+                paths.forEach(path -> {
                     if (RuntimeOption.TEST_MODE.isEnabled()) {
                         System.out.println("|||||||||||||||||File Deleted: " + path + "|||||||||||||||||");
                     }
-                    Files.delete(path);
-                }
+                    try {
+                        Files.delete(path);
+                    } catch (IOException e) {
+                        LOGGER.log(Level.SEVERE, "Failed to delete file " + path, e);
+                    }
+                });
             }
         } catch (IOException e) {
             LOGGER.log(Level.SEVERE, "Failed to prepare processed directory for matter " + matterNumber, e);
@@ -353,9 +361,18 @@ public class LoadFile {
      * Creates zip output, sends mail, and updates process status.
      */
     private static void zipAndEmail(Connection connection, String baseKey, MatterProcessResult result) {
+        if (result.matterNumber() == null || result.matterNumber().length() < 6) {
+            LOGGER.severe("Matter number must contain at least 6 characters for zip password generation");
+            updateProcessStatus(connection, baseKey, ProcessStatus.FAILED);
+            return;
+        }
+
+        String processedFolder = Path.of("processed", result.matterNumber()).toString();
+        String zipFilePath = Path.of("processed", result.matterNumber() + ".zip").toString();
+
         List<String> zipArgs = new ArrayList<>();
-        zipArgs.add("processed\\" + result.matterNumber());
-        zipArgs.add("processed\\" + result.matterNumber() + ".zip");
+        zipArgs.add(processedFolder);
+        zipArgs.add(zipFilePath);
         zipArgs.add("LL" + result.matterNumber().substring(0, 6));
 
         ZipPassFolder.main(zipArgs.toArray(String[]::new), result.templateNames());
@@ -364,17 +381,16 @@ public class LoadFile {
         mailArgs.add(result.emailAddress());
         mailArgs.add(result.matterNumber());
         mailArgs.add(result.matterName());
-        mailArgs.add(zipArgs.get(1));
+        mailArgs.add(zipFilePath);
 
-        String success = "";
+        String success = "Not Sent";
         if (RuntimeOption.EMAIL_ENABLED.isEnabled()) {
             success = SendMail.SendMail(mailArgs.toArray(String[]::new), result.templateNames());
             LOGGER.info("Status of Email: " + success);
         }
 
-        ProcessStatus status = "Failed".equals(success) ? ProcessStatus.FAILED : ProcessStatus.SUCCESS;
+        ProcessStatus status = "Failed".equalsIgnoreCase(success) ? ProcessStatus.FAILED : ProcessStatus.SUCCESS;
         updateProcessStatus(connection, baseKey, status);
-        result.templateNames().clear();
     }
 
     /**
