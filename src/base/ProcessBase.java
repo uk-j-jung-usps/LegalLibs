@@ -39,7 +39,7 @@ public class ProcessBase {
         var matterNumber = templateData.get(IDX_MATTER_NUMBER);
         var matterKey    = templateData.get(IDX_MATTER_KEY);
 
-        if (Load_File.lTest) {
+        if (LoadFile.TEST_MODE) {
             LOG.info("ProcessBase — folder: %s | template: %s | matter: %s"
                     .formatted(folder, templateName, matterNumber));
         }
@@ -91,7 +91,7 @@ public class ProcessBase {
                 pairs.add("%" + keyName + "%");
                 pairs.add(value);
 
-                if (Load_File.lTest) {
+                if (LoadFile.TEST_MODE) {
                     LOG.info("  substitution: %%%s%% = %s".formatted(keyName, value));
                 }
             }

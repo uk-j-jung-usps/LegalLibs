@@ -23,7 +23,7 @@
 	int numColumns;
 	int nRows;
 	int i;
-	boolean lTesting=false;
+	boolean TEST_MODEing=false;
 %>
 
 <style>
@@ -104,7 +104,7 @@ h3 {
 	sql1 = "select t.lh_doc_key,t.document_type_key,t.description,t.file_name,t.alt_file_name from lit_hold_files t ";
 	sql1 = sql1+"where t.matter_key = '"+cMatterKey+"' and t.client_userid = '"+cAceID+"' and t.status = 'S' order by t.lh_doc_key";
 	
-	if (lTesting) {
+	if (TEST_MODEing) {
 		out.println("*************************************************<br>");
 		out.println(sql1);
 		out.println("<br>*************************************************<br>");
@@ -125,7 +125,7 @@ h3 {
 	
 	int cKey=0;
 	
-	if (lTesting) {
+	if (TEST_MODEing) {
 		out.println("*************************************************<br>");
 	}
 	//if (rs.next()) {
@@ -135,7 +135,7 @@ h3 {
 		%>
 		<script>populateArray('<%out.print(cDesc);%>','<%out.print(cKey);%>');</script>
 		<%
-		if (lTesting) {
+		if (TEST_MODEing) {
 			//out.println("*************************************************<br>");
 			//out.println(sql0);
 			out.println("::");
@@ -144,7 +144,7 @@ h3 {
 		}
 	}	
 
-	if (lTesting) {
+	if (TEST_MODEing) {
 		out.println("<br>*************************************************<br>");
 	}
 	

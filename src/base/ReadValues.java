@@ -52,7 +52,7 @@ public class ReadValues {
         var sourcePath = Path.of(folder, templateFile);
         var outputPath = Path.of("processed", matterNumber, templateFile);
 
-        if (Load_File.lTest) {
+        if (LoadFile.TEST_MODE) {
             LOG.info("ReadValues — reading : " + sourcePath);
             LOG.info("ReadValues — writing : " + outputPath);
             LOG.info("ReadValues — pairs   : " + substitutions.length / 2);
@@ -70,7 +70,7 @@ public class ReadValues {
         // Append a trailing newline (preserved from original) and write
         Files.writeString(outputPath, content + System.lineSeparator(), StandardCharsets.UTF_8);
 
-        if (Load_File.lTest) {
+        if (LoadFile.TEST_MODE) {
             LOG.info("ReadValues — output written successfully");
         }
     }
@@ -95,7 +95,7 @@ public class ReadValues {
 
             content = replaceToken(content, token, replacement);
 
-            if (Load_File.lTest) {
+            if (LoadFile.TEST_MODE) {
                 LOG.info("  substituted: %s → %s".formatted(token, replacement));
             }
         }
