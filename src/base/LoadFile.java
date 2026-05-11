@@ -25,6 +25,9 @@ import java.util.stream.Stream;
 public class LoadFile {
 
     private static final Logger LOGGER = Logger.getLogger(LoadFile.class.getName());
+    public final static boolean TEST_MODE = true;
+	//Set to false when testing and you do not want email sent
+	public final static boolean EMAIL_ENABLED = true;
 
     private enum RuntimeOption {
         TEST_MODE(true),

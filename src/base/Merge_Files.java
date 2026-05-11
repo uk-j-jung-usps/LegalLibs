@@ -71,7 +71,7 @@ public class Merge_Files {
     // ── Entry point ───────────────────────────────────────────────────────────
 
     public static void main(String[] args) throws Exception {
-        if (Load_File.lTest) {
+        if (LoadFile.TEST_MODE) {
             LOG.info("NewMerge_Files — merging " + FRAGMENTS.size() + " fragments → " + OUTPUT_PATH);
         }
         mergeFragments();
@@ -94,7 +94,7 @@ public class Merge_Files {
                 var fileName = path.getFileName().toString();
                 boolean firstLine = true;  // counter header injected only on the first line of each fragment
 
-                if (Load_File.lTest) {
+                if (LoadFile.TEST_MODE) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
 

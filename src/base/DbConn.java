@@ -3,7 +3,7 @@ package base;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import base.Load_File;
+import base.LoadFile;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,7 +38,7 @@ public class DbConn {
     private final String url;
     private final String userName;
     private final String password;
-    public boolean lTest = false;
+    public boolean TEST_MODE = false;
 
     /**
      * Construct using environment variables.
@@ -179,7 +179,7 @@ public class DbConn {
     
     public static ResultSet execSQL(String sql) throws SQLException{
   	  
-  	  if (Load_File.lTest) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
+  	  if (LoadFile.TEST_MODE) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
     
   	  Statement s = dbCon.createStatement(); 
   	  ResultSet r = s.executeQuery(sql); 
