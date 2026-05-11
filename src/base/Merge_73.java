@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-import ldis.legallibs.db.DbConn;
+import base.DbConn;
 
 /**
  * Dynamic template merge for template key 73 — SF Advice /

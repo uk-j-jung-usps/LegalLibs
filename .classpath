@@ -8,7 +8,9 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/legallib"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/lib"/>
-	<classpathentry kind="lib" path="C:/Users/dd32j0/Downloads/zip4j-1.3.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/dd32j0/Downloads/net.lingala.zip4j-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/zip4j-2.11.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-2.0.17.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.mail-api-2.2.0-M1.jar"/>
+	<classpathentry kind="lib" path="lib/jakarta.activation-api-2.2.0-M2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
