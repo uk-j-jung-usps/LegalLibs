@@ -135,6 +135,20 @@ public class DbConn {
     }
 
     /**
+     * Convenience method to run a SELECT and return the ResultSet.
+     *
+     * Caller is responsible for closing the ResultSet, its Statement,
+     * and the underlying Connection.
+     */
+    public ResultSet queryExecute(String sql, Object... params) throws SQLException {
+        Connection conn = getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql);
+
+        bindParams(ps, params);
+        return ps.executeQuery();
+    }//end of queryExecute
+
+    /**
      * Convenience method to run a SELECT and return rows as a list of Object arrays.
      */
     public List<Object[]> cmftQueryExecute(String sql, Object... params) throws SQLException {
@@ -157,6 +171,23 @@ public class DbConn {
                 return rows;
             }
         }
+    }//end of cmftQueryExecute
+    
+    
+    public static ResultSet execSQL(String sql) throws SQLException{
+    	if (LoadFile.lTest) {
+    		System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||");
+    	}
+
+    	if (dbCon == null || dbCon.isClosed()) {
+    		DbConn db = new DbConn();
+    		dbCon = db.getConnection();
+    	}
+    	
+    	Statement stmt = dbCon.createStatement();
+    	ResultSet r = stmt.executeQuery(sql);
+    	
+    	return (r == null) ? null : r; 
     }
 
     /**
@@ -178,15 +209,17 @@ public class DbConn {
         }
     }
     
-    public static ResultSet execSQL(String sql) throws SQLException{
-  	  
-  	  if (LoadFile.lTest) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
-    
-  	  
-  	  Statement s = dbCon.createStatement(); 
-  	  ResultSet r = s.executeQuery(sql); 
-  	  return (r == null) ? null : r; 
-    }
+	/*
+	 * public static ResultSet execSQL(String sql) throws SQLException{
+	 * 
+	 * if (LoadFile.lTest) System.out.
+	 * println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"
+	 * );
+	 * 
+	 * 
+	 * Statement s = dbCon.createStatement(); ResultSet r = s.executeQuery(sql);
+	 * return (r == null) ? null : r; }
+	 */
     
 
 }
