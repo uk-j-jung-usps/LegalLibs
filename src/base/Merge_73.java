@@ -50,7 +50,7 @@ public class Merge_73 {
         var matterNumber = args[0];
         var sMatterKey    = args[1];
 
-        if (LoadFile.TEST_MODE) {
+        if (LoadFile.lTest) {
             LOG.info("Merge_73 — matter: " + matterNumber);
         }
 
@@ -75,8 +75,8 @@ public class Merge_73 {
     private static List<Path> buildFragmentList(String sMatterKey) throws SQLException {
         var sql = """
                 SELECT a.dynamic_quest_key, a.answer
-                  FROM cmft_dynamic_ans   a,
-                       cmft_dynamic_quest  b
+                  FROM lawmanager.cmft_dynamic_ans   a,
+                       lawmanager.lawmanager.cmft_dynamic_quest  b
                  WHERE a.matter_key         = '%s'
                    AND a.template_key       = %d
                    AND a.dynamic_quest_key  = b.dynamic_quest_key
@@ -93,7 +93,7 @@ public class Merge_73 {
                 int questKey = rs.getInt("dynamic_quest_key");
                 int answer   = rs.getInt("answer");
 
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("Q%d  answer=%d".formatted(questKey, answer));
                 }
 
@@ -127,7 +127,7 @@ public class Merge_73 {
             case 7 -> { if (answer == 1) fragments.add(dynPath("inter12.txt")); }
             case 8 -> {
                 if (answer == 1) fragments.add(dynPath("inter13.txt"));
-                if (LoadFile.TEST_MODE) LOG.info("  Adding bottom fragments");
+                if (LoadFile.lTest) LOG.info("  Adding bottom fragments");
                 fragments.add(dynPath("inter14.txt")); // always included
                 fragments.add(dynPath("Bottom_Final_Subpoena_State_Court_template.txt"));
             }
@@ -153,7 +153,7 @@ public class Merge_73 {
                 var path     = fragments.get(i);
                 var fileName = path.getFileName().toString();
 
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
 

@@ -39,7 +39,7 @@ public class ProcessBase {
         var matterNumber = templateData.get(IDX_MATTER_NUMBER);
         var matterKey    = templateData.get(IDX_MATTER_KEY);
 
-        if (LoadFile.TEST_MODE) {
+        if (LoadFile.lTest) {
             LOG.info("ProcessBase — folder: %s | template: %s | matter: %s"
                     .formatted(folder, templateName, matterNumber));
         }
@@ -74,7 +74,7 @@ public class ProcessBase {
     private static String[] loadSubstitutions(String matterKey) {
         var sql = """
                 SELECT a.tempvar_key_name, a.tempvar_value
-                  FROM cmft_matterkey_pairs a
+                  FROM lawmanager.cmft_matterkey_pairs a
                  WHERE a.matter_key = '%s'
                 """.formatted(matterKey);
 
@@ -91,7 +91,7 @@ public class ProcessBase {
                 pairs.add("%" + keyName + "%");
                 pairs.add(value);
 
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("  substitution: %%%s%% = %s".formatted(keyName, value));
                 }
             }

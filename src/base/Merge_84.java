@@ -53,7 +53,7 @@ public class Merge_84 {
         var matterNumber = args[0];
         var matterKey    = args[1];
 
-        if (LoadFile.TEST_MODE) {
+        if (LoadFile.lTest) {
             LOG.info("NewMerge_84 — matter: " + matterNumber);
         }
 
@@ -108,14 +108,14 @@ public class Merge_84 {
 
         var repSql = """
                 SELECT t.tempvar_key_name, t.tempvar_value
-                  FROM cmft_matterkey_pairs t
+                  FROM lawmanager.cmft_matterkey_pairs t
                  WHERE t.matter_key       = %s
                    AND t.tempvar_key_name IN (
                          'REP_CITYSTZIP','REP_MR_MS','REP_FN',
                          'REP_LN','REP_ADD','REP_COMPANY')
                 """.formatted(matterKey);
 
-        if (LoadFile.TEST_MODE) LOG.info("SQL (rep query): " + repSql);
+        if (LoadFile.lTest) LOG.info("SQL (rep query): " + repSql);
 
         Map<String, String> rep = new HashMap<>();
         try (ResultSet rs = DbConn.execSQL(repSql)) {
@@ -123,7 +123,7 @@ public class Merge_84 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value"); // may be null
                 rep.put(key, val);
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("  Rep field %s = %s".formatted(key, val));
                 }
             }
@@ -135,7 +135,7 @@ public class Merge_84 {
                         || ln.isEmpty() || "PRO SE".equalsIgnoreCase(ln);
 
         if (!nameNull) {
-            if (LoadFile.TEST_MODE) LOG.info("Representative exists — adding CC for rep, AJ and MSPB");
+            if (LoadFile.lTest) LOG.info("Representative exists — adding CC for rep, AJ and MSPB");
             return new AddressFields(
                     safeGet(rep, "REP_MR_MS"),
                     fn,
@@ -147,18 +147,18 @@ public class Merge_84 {
         }
 
         // Fall back to appellant fields
-        if (LoadFile.TEST_MODE) LOG.info("No representative — using appellant fields; CC for AJ and MSPB only");
+        if (LoadFile.lTest) LOG.info("No representative — using appellant fields; CC for AJ and MSPB only");
 
         var appSql = """
                 SELECT t.tempvar_key_name, t.tempvar_value
-                  FROM cmft_matterkey_pairs t
+                  FROM lawmanager.cmft_matterkey_pairs t
                  WHERE t.matter_key       = %s
                    AND t.tempvar_key_name IN (
                          'APPELLANT_MR_MS','APPELLANT_FN','APPELLANT_LN',
                          'APPELLANT_ADD','APPELLANT_CITYSTZIP')
                 """.formatted(matterKey);
 
-        if (LoadFile.TEST_MODE) LOG.info("SQL (appellant query): " + appSql);
+        if (LoadFile.lTest) LOG.info("SQL (appellant query): " + appSql);
 
         Map<String, String> app = new HashMap<>();
         try (ResultSet rs = DbConn.execSQL(appSql)) {
@@ -166,7 +166,7 @@ public class Merge_84 {
                 var key = rs.getString("tempvar_key_name");
                 var val = rs.getString("tempvar_value");
                 app.put(key, val);
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("  Appellant field %s = %s".formatted(key, val));
                 }
             }
@@ -198,7 +198,7 @@ public class Merge_84 {
                 """.formatted(matterKey);
         try {
             DbConn.execSQL(sql);
-            if (LoadFile.TEST_MODE) {
+            if (LoadFile.lTest) {
                 LOG.info("Deleted stale dynamic pairs (keys 150–158) for matter " + matterKey);
             }
         } catch (SQLException e) {
@@ -225,14 +225,14 @@ public class Merge_84 {
         };
 
         var baseSql = """
-                INSERT INTO cmft_matterkey_pairs
+                INSERT INTO lawmanager.cmft_matterkey_pairs
                     (matter_key, tempvar_key_name, tempvar_value, tempvar_key, date_added, added_by)
                 VALUES (%s, '%s', '%s', %d, SYSDATE, 100000)
                 """;
 
         for (var row : inserts) {
             var sql = baseSql.formatted(matterKey, row[0], row[1], row[2]);
-            if (LoadFile.TEST_MODE) LOG.info("Insert: " + sql);
+            if (LoadFile.lTest) LOG.info("Insert: " + sql);
             try {
                 DbConn.execSQL(sql);
             } catch (SQLException e) {
@@ -269,7 +269,7 @@ public class Merge_84 {
         try (var writer = Files.newBufferedWriter(outputPath, StandardCharsets.UTF_8)) {
             for (int i = 0; i < fragments.size(); i++) {
                 var path = fragments.get(i);
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
                 try (BufferedReader reader = Files.newBufferedReader(path.toAbsolutePath(), StandardCharsets.UTF_8)) {

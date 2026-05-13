@@ -33,6 +33,7 @@ public class DbConn {
 
     private static final Logger log = LoggerFactory.getLogger(DbConn.class);
     private static Connection dbCon;
+    private String dbDriver = "oracle.jdbc.driver.OracleDriver";
 
     // Prefer external configuration over hardcoding secrets in source code.
     private final String url;
@@ -179,8 +180,9 @@ public class DbConn {
     
     public static ResultSet execSQL(String sql) throws SQLException{
   	  
-  	  if (LoadFile.TEST_MODE) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
+  	  if (LoadFile.lTest) System.out.println("||||||||||||||||||||||||||DbBean - ResultSet||||||||||||||||||||||||||||||||||||||"); 
     
+  	  
   	  Statement s = dbCon.createStatement(); 
   	  ResultSet r = s.executeQuery(sql); 
   	  return (r == null) ? null : r; 
