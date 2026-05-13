@@ -44,7 +44,7 @@ public class Load_File {
 
 		logger.info("Running Legal Libs");
 
-		if (LoadFile.TEST_MODE) System.out.println("Begin LoadFile"); 
+		if (LoadFile.lTest) System.out.println("Begin LoadFile"); 
 
 
 		//***************************************************************************************************
@@ -133,7 +133,7 @@ public class Load_File {
 		while (resultset0.next()) {
 			cBaseKey = resultset0.getString("base_key");
 
-			if (LoadFile.TEST_MODE) System.out.println("Matter to process base key: "+cBaseKey); 
+			if (LoadFile.lTest) System.out.println("Matter to process base key: "+cBaseKey); 
 
 
 			//Query all templates by base key to be process
@@ -184,13 +184,13 @@ public class Load_File {
 			//Go through list of dynamic templates to process by matter key
 			while (resultset2.next()) {
 				
-				if (LoadFile.TEST_MODE) System.out.println("Dynamic Template Found");
+				if (LoadFile.lTest) System.out.println("Dynamic Template Found");
 				
 				cMatterNumber = resultset2.getString("matter_number");
 				int nMatterKey = resultset2.getInt("matter_key");
 				cMatterKey = Integer.toString(nMatterKey);
 				
-				if (LoadFile.TEST_MODE) System.out.println(cMatterNumber);
+				if (LoadFile.lTest) System.out.println(cMatterNumber);
 
 				String[] aMergeArray;
 				
@@ -207,7 +207,7 @@ public class Load_File {
 				String cMatterType="";
 				cMatterType = resultset2.getString("matter_type_key");
 				
-				if (LoadFile.TEST_MODE) System.out.println(cMatterType);
+				if (LoadFile.lTest) System.out.println(cMatterType);
 				
 				//int nMatterType = Integer.parseInt(cMatterType);
 				
@@ -219,7 +219,7 @@ public class Load_File {
 				
 				case 73: ;	//SF Advice template 73
 					try {
-						if (LoadFile.TEST_MODE) System.out.println("Merging Dynamic Template");
+						if (LoadFile.lTest) System.out.println("Merging Dynamic Template");
 
 						Merge_73.main(aMergeArray);
 					} catch (Exception e) {
@@ -230,7 +230,7 @@ public class Load_File {
 
 				case 77: ;	//SF EEOC template 77
 				try {
-					if (LoadFile.TEST_MODE) System.out.println("Merging EEO Office of Resolution Dynamic Template");
+					if (LoadFile.lTest) System.out.println("Merging EEO Office of Resolution Dynamic Template");
 
 					Merge_77.main(aMergeArray);
 				} catch (Exception e) {
@@ -241,7 +241,7 @@ public class Load_File {
 					
 				case 78: ;	//SF EEOC template 78
 				try {
-					if (LoadFile.TEST_MODE) System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
+					if (LoadFile.lTest) System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
 
 					Merge_78.main(aMergeArray);
 				} catch (Exception e) {
@@ -252,7 +252,7 @@ public class Load_File {
 
 				case 80: ;	//SF MSPB template 80
 				try {
-					if (LoadFile.TEST_MODE) System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
+					if (LoadFile.lTest) System.out.println("EEOC Template Ltr Applnt Rep Req Auth final");
 
 					Merge_80.main(aMergeArray);
 				} catch (Exception e) {
@@ -263,7 +263,7 @@ public class Load_File {
 				
 				case 84: ;	//SF MSPB template 84
 				try {
-					if (LoadFile.TEST_MODE) System.out.println("MSPB Ltr Applnt re refuse release");
+					if (LoadFile.lTest) System.out.println("MSPB Ltr Applnt re refuse release");
 
 					Merge_84.main(aMergeArray);
 				} catch (Exception e) {
@@ -313,14 +313,14 @@ public class Load_File {
 
 				//If dynamic add matter_number_ as prefix to template
 				if (resultset1.getString("dynamic").equals("Y")){
-					if (LoadFile.TEST_MODE) System.out.println("Dynamic");
+					if (LoadFile.lTest) System.out.println("Dynamic");
 					
 					strListNameOnly.add(cMatterNumber+"_"+resultset1.getString("template_name"));
 					
 				}
 				else
 				{	
-					if (LoadFile.TEST_MODE) System.out.println("Normal"); 
+					if (LoadFile.lTest) System.out.println("Normal"); 
 					strListNameOnly.add(resultset1.getString("template_name"));
 				}
 					
@@ -355,7 +355,7 @@ public class Load_File {
 							//Delete all files in Directory
 							File[] files = theDir.listFiles();
 							for(int i=0; i<files.length; i++) {
-								if (LoadFile.TEST_MODE) System.out.println("|||||||||||||||||File Deleted: "+files[i]+"|||||||||||||||||"); 
+								if (LoadFile.lTest) System.out.println("|||||||||||||||||File Deleted: "+files[i]+"|||||||||||||||||"); 
 								files[i].delete();
 							}			
 

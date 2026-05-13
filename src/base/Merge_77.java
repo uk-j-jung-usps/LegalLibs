@@ -40,7 +40,7 @@ public class Merge_77 {
         var matterNumber = args[0];
         var cMatterKey = args[1];
 
-        if (LoadFile.TEST_MODE) {
+        if (LoadFile.lTest) {
             LOG.info("Merge_77 — matter: " + matterNumber);
         }
 
@@ -65,8 +65,8 @@ public class Merge_77 {
     private static List<Path> buildFragmentList(String cMatterKey) throws SQLException {
         var sql = """
                 SELECT a.dynamic_quest_key, a.answer
-                  FROM cmft_dynamic_ans   a,
-                       cmft_dynamic_quest  b
+                  FROM lawmanager.lawmanager.cmft_dynamic_ans   a,
+                       lawmanager.cmft_dynamic_quest  b
                  WHERE a.matter_key        = '%s'
                    AND a.template_key      = %d
                    AND a.dynamic_quest_key = b.dynamic_quest_key
@@ -82,7 +82,7 @@ public class Merge_77 {
                 int questKey = rs.getInt("dynamic_quest_key");
                 int answer   = rs.getInt("answer");
 
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("  Q%d  answer=%d".formatted(questKey, answer));
                 }
 
@@ -121,7 +121,7 @@ public class Merge_77 {
             }
             case 22 -> {
                 if (answer == 1) fragments.add(dynPath("inter12.txt"));
-                if (LoadFile.TEST_MODE) LOG.info("  Adding bottom fragment");
+                if (LoadFile.lTest) LOG.info("  Adding bottom fragment");
                 fragments.add(dynPath("Bottom_Offer_of_Resolution.rtf")); // always included
             }
             default -> LOG.warning("Unrecognised question key: " + questKey);
@@ -141,7 +141,7 @@ public class Merge_77 {
             for (int i = 0; i < fragments.size(); i++) {
                 var path = fragments.get(i);
 
-                if (LoadFile.TEST_MODE) {
+                if (LoadFile.lTest) {
                     LOG.info("Merging fragment [%d]: %s".formatted(i, path));
                 }
 
