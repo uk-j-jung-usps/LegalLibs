@@ -2775,3 +2775,911 @@ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStateme
 	at base.LoadFile.processMatters(LoadFile.java:140)
 	at base.LoadFile.main(LoadFile.java:111)
 
+May 13, 2026 9:46:38 AM base.LoadFile main
+INFO: Running Legal Libs
+May 13, 2026 9:46:41 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Closing Memo EEOC.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:41 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - 10-Day Letter re No Discovery Responses.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:41 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency Deficiency Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:42 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Discovery Responses.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:42 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Medical Release Forms for Discovery.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:42 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Written Discovery w Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:42 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Written Discovery w-o Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:43 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Cover letter for med records.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:43 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template WO202410109_Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:43 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:44 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:44 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:44 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:45 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Standard Depo Notice.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:45 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - [FOR SF USE ONLY] - Agency's Standard Medical Release Forms for Discovery.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:45 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - [FOR SF USE ONLY] - Agency's Standard Written Discovery w Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:46 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Fax Cover Sheet - AJ.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:46 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Fax Cover Sheet - Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:46 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to AJ.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:47 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to Comp.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:47 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:48 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template OWCP Records Authorization.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:48 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Designation of Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:48 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Motion to Compel - Proposed Order.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:49 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Motion to Compel.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:49 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Opposition to Appeal (No Brief by Complainant).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:49 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Substitution Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:49 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Certificate of Service.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:50 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - LAMP - FAX ONLY.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:50 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Master Caption.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:50 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - PCI Pleading.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:51 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - PCI Submission Form.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:51 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Proposed Order.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:51 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Privacy Act Authorization_General (eeoc).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template PS Form 8041 Request for Settlement Check.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Client Docs No Release Obtained.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Client Docs.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Medical Information.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Settlement Agreement and General Release - EEOC (Macro version).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Settlement Check Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Case Summary.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - Revised Settlement Authority Briefing Sheet 10K or Less.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - Case Closing Form - EEOC.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Initial Case Review Form.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 9:46:55 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Tasking Chart.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:168)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:49 AM base.LoadFile main
+INFO: Running Legal Libs
+May 13, 2026 10:44:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Closing Memo EEOC.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - 10-Day Letter re No Discovery Responses.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency Deficiency Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:52 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Discovery Responses.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Medical Release Forms for Discovery.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Written Discovery w Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:53 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Agency's Standard Written Discovery w-o Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Cover letter for med records.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template WO202410109_Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:54 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:55 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:55 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:55 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - OWCP Release Request.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:56 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - Standard Depo Notice.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:56 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - [FOR SF USE ONLY] - Agency's Standard Medical Release Forms for Discovery.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:56 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Discovery - [FOR SF USE ONLY] - Agency's Standard Written Discovery w Medical Forms.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:56 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Fax Cover Sheet - AJ.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:57 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Fax Cover Sheet - Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:57 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to AJ.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:57 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to Comp.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:58 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Master Letterhead to Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:58 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template OWCP Records Authorization.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:58 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Designation of Rep.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:59 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Motion to Compel - Proposed Order.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:59 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Motion to Compel.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:44:59 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Opposition to Appeal (No Brief by Complainant).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:00 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Agency's Substitution Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:00 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Certificate of Service.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:00 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - LAMP - FAX ONLY.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:00 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Master Caption.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:01 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - PCI Pleading.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:01 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - PCI Submission Form.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:01 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Pleadings - Proposed Order.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:02 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Privacy Act Authorization_General (eeoc).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:02 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template PS Form 8041 Request for Settlement Check.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:02 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Client Docs No Release Obtained.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:03 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Client Docs.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:03 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Request for Medical Information.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:03 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Settlement Agreement and General Release - EEOC (Macro version).rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:03 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Settlement Check Letter.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:04 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Case Summary.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:04 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - Revised Settlement Authority Briefing Sheet 10K or Less.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:04 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - Case Closing Form - EEOC.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:05 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Initial Case Review Form.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:45:05 AM base.LoadFile processStaticTemplates
+SEVERE: ProcessBase failed for template Staff Notes - EEOC Tasking Chart.rtf
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "base.DbConn.dbCon" is null
+	at base.DbConn.execSQL(DbConn.java:182)
+	at base.ProcessBase.loadSubstitutions(ProcessBase.java:83)
+	at base.ProcessBase.process(ProcessBase.java:55)
+	at base.LoadFile.processStaticTemplates(LoadFile.java:328)
+	at base.LoadFile.processMatters(LoadFile.java:140)
+	at base.LoadFile.main(LoadFile.java:111)
+
+May 13, 2026 10:46:14 AM base.LoadFile main
+INFO: Running Legal Libs
+May 13, 2026 11:08:13 AM base.LoadFile main
+INFO: Running Legal Libs
